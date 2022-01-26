@@ -1,0 +1,60 @@
+.page {
+  @apply w-full mt-10 pt-10 relative z-20;
+
+  /* NESTED STYLES */
+  img {
+    @apply w-full rounded-sm mb-10;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white mt-8 mb-8;
+  }
+
+  h1 {
+    @apply text-3xl font-maven;
+  }
+  h2 {
+    @apply text-2xl font-maven;
+  }
+  h3 {
+    @apply text-xl font-maven;
+  }
+  h4 {
+    @apply text-lg font-maven;
+  }
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm;
+  }
+
+  p {
+    @apply text-white;
+  }
+
+  strong {
+    @apply font-bold bg-[#486AF2] px-1 rounded-lg;
+  }
+
+  .hr {
+    @apply w-full h-2 bg-transparent relative my-20;
+    div {
+      @apply flex justify-between w-max space-x-8 items-center mx-auto;
+    }
+
+    span {
+      @apply w-1 h-1 rounded-full bg-white border-2;
+    }
+  }
+
+  .title {
+    @apply bg-[#486AF2] text-white w-max px-5 py-2  rounded-md sticky mb-10 top-14 z-20;
+  }
+}

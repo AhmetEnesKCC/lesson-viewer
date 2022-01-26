@@ -1,0 +1,5 @@
+.header {
+  @apply h-[48px] w-[inherit] text-white sticky bg-inherit top-0 z-50 flex items-center justify-end mb-[48px];
+  font-family: Poppins;
+  font-weight: 700;
+}

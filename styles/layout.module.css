@@ -1,0 +1,8 @@
+.layout {
+  width: 100vw;
+  @apply mx-auto min-h-screen bg-main-black pt-10 box-border pb-20;
+}
+
+.content {
+  @apply w-[100%] px-10 md:px-0 md:w-[60ch] lg:w-[70ch] xl:w-[80ch] pt-[48px] mx-auto bg-transparent min-h-screen relative bg-main-black z-50;
+}
