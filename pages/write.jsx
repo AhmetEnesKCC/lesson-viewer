@@ -62,9 +62,15 @@ const Write = () => {
         writeObject.id = uuid();
         writeObject.value = content.trim().slice(4).slice(0, -1);
         newWrites.push(writeObject);
-      } else {
+      } else if (content.match(/^(---)/)) {
         const writeObject = {};
-        writeObject.type = "yazi";
+        writeObject.type = "hr";
+        writeObject.id = uuid();
+        writeObject.value = content.trim();
+        newWrites.push(writeObject);
+      } else if (content.trim()) {
+        const writeObject = {};
+        writeObject.type = "hr";
         writeObject.id = uuid();
         writeObject.value = content.trim();
         newWrites.push(writeObject);
