@@ -261,7 +261,7 @@ const Write = () => {
         <div>
           <div
             onClick={() => {
-              setWrites([...writes, { type: "h1", id: uuid }]);
+              setWrites([...writes, { type: "h1", id: uuid(), value: "" }]);
             }}
           >
             H1
