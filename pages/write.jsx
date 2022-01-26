@@ -70,7 +70,7 @@ const Write = () => {
         newWrites.push(writeObject);
       } else if (content.trim()) {
         const writeObject = {};
-        writeObject.type = "hr";
+        writeObject.type = "yazi";
         writeObject.id = uuid();
         writeObject.value = content.trim();
         newWrites.push(writeObject);

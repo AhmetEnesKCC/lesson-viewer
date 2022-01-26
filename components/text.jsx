@@ -32,6 +32,7 @@ const Text = ({ ondelete, onSubmit, type, id, defaultValue }) => {
         onChange={(e) => {
           e.target.style.height = "auto";
           e.target.style.height = e.target.scrollHeight.toString() + "px";
+          setValue(e.target.value);
         }}
         className={type}
       />
