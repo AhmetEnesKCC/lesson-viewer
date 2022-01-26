@@ -245,6 +245,7 @@ const Write = () => {
             <HR
               key={w.id}
               id={w.id}
+              type={w.type}
               ondelete={() => {
                 const oldWrites = writes;
                 const newWrites = oldWrites.filter((wr) => wr.id !== w.id);
