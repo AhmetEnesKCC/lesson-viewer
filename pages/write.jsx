@@ -82,7 +82,7 @@ const Write = () => {
         const source = element.querySelector("img").getAttribute("src");
         text += `\n![](${source})\n`;
         sources.push(source);
-      } else if (write.type === "text") {
+      } else if (write.type === "yazi") {
         text +=
           "\n" +
           element.querySelector(`.${write.type}`).value.replace("\n", " ") +
