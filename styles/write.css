@@ -1,6 +1,12 @@
 .write {
-  input {
-    @apply w-full outline-none py-4 bg-transparent border-2 border-main-white border-opacity-20 rounded-lg placeholder:text-main-white placeholder:text-opacity-20 px-5 text-2xl text-main-white;
+  input[type="number"],
+  input[type="text"] {
+    @apply w-full outline-none py-4 bg-transparent border-2 border-opacity-20 rounded-lg placeholder:text-opacity-20 px-5 text-2xl;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    &::placeholder {
+      color: var(--text-color);
+    }
     &:focus {
       @apply border-opacity-20;
     }
@@ -53,7 +59,8 @@
   }
 
   .add {
-    @apply w-full bg-main-white bg-opacity-25 h-[50px] rounded-lg flex items-center justify-between;
+    @apply w-full  bg-opacity-25 h-[50px] rounded-lg flex items-center justify-between;
+    background-color: var(--text-color);
     div {
       @apply text-center w-full text-white h-full flex items-center justify-center gap-x-6 font-maven font-semibold;
       &:hover {

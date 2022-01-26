@@ -7,8 +7,10 @@ import { ImClock2 } from "react-icons/im";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Lang className={styles.lang} />
-      <Theme className={styles.theme} />
+      <div className="flex">
+        <Lang className={styles.lang} />
+        <Theme className={styles.theme} />
+      </div>
       <div
         className="w-max space-x-6 flex justify-between items-center text-lg"
         style={{ color: "#949494" }}

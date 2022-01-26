@@ -124,10 +124,11 @@ const Write = () => {
           }}
         />
       </button>
-      <div className="w-full text-main-white text-center mb-5 text-xl">
+      <div className="w-full text-[var(--text-color) text-center mb-5 text-xl">
         Başlık
       </div>
       <input
+        type="text"
         value={frontMatter.title}
         onChange={(e) => {
           setFrontMatter({ ...frontMatter, title: e.target.value });
@@ -135,7 +136,7 @@ const Write = () => {
         placeholder="Başlık"
         className="mb-10"
       />
-      <div className="w-full text-main-white text-center mb-5 text-xl">
+      <div className="w-full text-[var(--text-color) text-center mb-5 text-xl">
         Numara
       </div>
       <div className="flex justify-start items-center w-max mx-auto">
@@ -148,7 +149,7 @@ const Write = () => {
           min={1}
           max={20}
         />{" "}
-        <span className="text-main-white mx-10 text-3xl">-</span>
+        <span className="text-[var(--text-color)] mx-10 text-3xl">-</span>
         <input
           onChange={(e) => {
             setFrontMatter({ ...frontMatter, numara2: e.target.value });
@@ -159,7 +160,7 @@ const Write = () => {
           max={20}
         />
       </div>
-      <div className="w-full text-main-white text-center  text-xl mt-10 mb-5">
+      <div className="w-full text-[var(--text-color) text-center  text-xl mt-10 mb-5">
         İsim
       </div>
 
@@ -167,11 +168,12 @@ const Write = () => {
         onChange={(e) => {
           setFrontMatter({ ...frontMatter, isim: e.target.value });
         }}
+        type="text"
         value={frontMatter.isim}
         placeholder="İsim"
         className="mb-10"
       />
-      <div className="w-full text-main-white text-center  text-xl mt-10 mb-5">
+      <div className="w-full text-[var(--text-color) text-center  text-xl mt-10 mb-5">
         Öğrenci Numarası
       </div>
       <input
@@ -179,8 +181,9 @@ const Write = () => {
           setFrontMatter({ ...frontMatter, ogrenci_numarasi: e.target.value });
         }}
         value={frontMatter.ogrenci_numarasi}
-        placeholder="İsim"
+        placeholder="Ogrenci Numarasi"
         className="mb-10"
+        type="text"
       />
 
       {writes &&

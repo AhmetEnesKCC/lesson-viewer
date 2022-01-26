@@ -19,7 +19,10 @@ export default function Home(props) {
         <title>MAT 117 ARTICLE</title>
         <meta name="description" content="Created to view slides" />
       </Head>
-      <div className="text-3xl text-white font-main font-bold">
+      <div
+        className="text-3xl font-main font-bold"
+        style={{ color: "var(--text-color)" }}
+      >
         Kriptoloji ve Blockchain - Donem Odevi
       </div>
       {props?.mdDatas?.map?.((page) => {
@@ -29,7 +32,6 @@ export default function Home(props) {
           </Page>
         );
       })}
-      <iframe src="https://www.google.com/" />
     </div>
   );
 }

@@ -42,3 +42,24 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+:root {
+  --body-bg: #212121;
+  --span-bg: #fafafa;
+  --text-color: #fafafa;
+  --text-color-inverse: #fafafa;
+}
+
+.layout[data-theme="dark"] {
+  --body-bg: #212121;
+  --span-bg: #fafafa;
+  --text-color: #fafafa;
+  --text-color-inverse: #212121;
+}
+
+.layout[data-theme="light"] {
+  --body-bg: #fafafa;
+  --span-bg: #212121;
+  --text-color: #212121;
+  --text-color-inverse: #fafafa;
+}
