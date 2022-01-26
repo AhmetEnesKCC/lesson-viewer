@@ -41,8 +41,7 @@
   }
 
   strong {
-    @apply font-bold bg-[#486AF2] px-1 rounded-lg;
-    color: var(--text-color-inverse);
+    @apply font-bold bg-[#486AF2] px-1 rounded-lg text-[#fafafa];
   }
 
   .hr {

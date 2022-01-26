@@ -1,4 +1,4 @@
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import Layout from "../components/layout";
 import { store } from "../Redux";
 import "../styles/globals.css";

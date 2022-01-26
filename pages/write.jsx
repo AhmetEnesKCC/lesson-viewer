@@ -106,7 +106,7 @@ const Write = () => {
   };
 
   return (
-    <form className="write" action="get" onSubmit={handleSubmit}>
+    <form className="write" action="get" id="file-form" onSubmit={handleSubmit}>
       <button
         type="submit"
         className="mb-10 text-white w-full bg-orange-500 bg-opacity-40 text-center py-2 mt-2"
@@ -124,7 +124,10 @@ const Write = () => {
           }}
         />
       </button>
-      <div className="w-full text-[var(--text-color) text-center mb-5 text-xl">
+      <div
+        className="w-full text-center mb-5 text-xl"
+        style={{ color: "var(--text-color)" }}
+      >
         Başlık
       </div>
       <input
@@ -136,7 +139,10 @@ const Write = () => {
         placeholder="Başlık"
         className="mb-10"
       />
-      <div className="w-full text-[var(--text-color) text-center mb-5 text-xl">
+      <div
+        className="w-full text-center mb-5 text-xl"
+        style={{ color: "var(--text-color)" }}
+      >
         Numara
       </div>
       <div className="flex justify-start items-center w-max mx-auto">
@@ -149,7 +155,12 @@ const Write = () => {
           min={1}
           max={20}
         />{" "}
-        <span className="text-[var(--text-color)] mx-10 text-3xl">-</span>
+        <span
+          className=" mx-10 text-3xl"
+          style={{ color: "var(--text-color)" }}
+        >
+          -
+        </span>
         <input
           onChange={(e) => {
             setFrontMatter({ ...frontMatter, numara2: e.target.value });
@@ -160,7 +171,10 @@ const Write = () => {
           max={20}
         />
       </div>
-      <div className="w-full text-[var(--text-color) text-center  text-xl mt-10 mb-5">
+      <div
+        style={{ color: "var(--text-color)" }}
+        className="w-full  text-center  text-xl mt-10 mb-5"
+      >
         İsim
       </div>
 
@@ -173,7 +187,10 @@ const Write = () => {
         placeholder="İsim"
         className="mb-10"
       />
-      <div className="w-full text-[var(--text-color) text-center  text-xl mt-10 mb-5">
+      <div
+        className="w-full  text-center  text-xl mt-10 mb-5"
+        style={{ color: "var(--text-color)" }}
+      >
         Öğrenci Numarası
       </div>
       <input
@@ -276,6 +293,7 @@ const Write = () => {
         </div>
       </div>
       <button
+        id="save-file"
         type="submit"
         className="text-white w-full bg-blue-600 text-center py-2 mt-2"
       >

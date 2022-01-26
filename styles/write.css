@@ -51,7 +51,8 @@
   .img,
   .text {
     .delete {
-      @apply text-white text-xl mb-2 bg-red-500 w-max p-2 cursor-pointer;
+      @apply text-xl mb-2 bg-red-500 w-max p-2 cursor-pointer;
+      color: var(--text-color);
       &:hover {
         @apply bg-red-600;
       }
@@ -62,9 +63,12 @@
     @apply w-full  bg-opacity-25 h-[50px] rounded-lg flex items-center justify-between;
     background-color: var(--text-color);
     div {
-      @apply text-center w-full text-white h-full flex items-center justify-center gap-x-6 font-maven font-semibold;
+      @apply text-center w-full h-full flex items-center justify-center gap-x-6 font-maven font-semibold;
+      color: var(--text-color-inverse);
       &:hover {
-        @apply bg-main-white bg-opacity-30 cursor-pointer;
+        @apply bg-opacity-30 cursor-pointer;
+        background-color: var(--text-color);
+        filter: brightness(0.8);
       }
     }
   }
