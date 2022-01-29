@@ -3,7 +3,20 @@
 
   /* NESTED STYLES */
   img {
-    @apply w-full rounded-sm my-10;
+    @apply w-full rounded-sm my-10 bg-white;
+  }
+
+  ol {
+    @apply ml-4 my-5;
+  }
+
+  ol li {
+    @apply my-2 ml-1;
+    display: list-item;
+    &::marker {
+      content: counter(list-item) ". ";
+      @apply mr-2 text-purple-500 font-maven font-bold text-lg;
+    }
   }
 
   h1,

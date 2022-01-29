@@ -303,6 +303,13 @@ const Write = () => {
           >
             Cizgi ---
           </div>
+          <div
+            onClick={() => {
+              setWrites([...writes, { type: "hr", id: uuid() }]);
+            }}
+          >
+            Liste
+          </div>
         </div>
       </div>
       <button

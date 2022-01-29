@@ -55,9 +55,9 @@ const Header = ({ onToggle }) => {
         onClick={() => {
           onToggle?.();
         }}
-        className="bg-purple-400 p-2 text-black cursor-pointer"
+        className="bg-purple-600 text-white rounded-md shadow-purple-600  p-1 text-sm  cursor-pointer"
       >
-        demo
+        Demo
       </div>
       <div
         className="w-max space-x-6 flex justify-between items-center text-lg"
