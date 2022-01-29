@@ -3,7 +3,7 @@
 
   /* NESTED STYLES */
   img {
-    @apply w-full rounded-sm mb-10;
+    @apply w-full rounded-sm my-10;
   }
 
   h1,

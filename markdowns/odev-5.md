@@ -1,0 +1,38 @@
+---
+title: 4-8  BLOCKCHAİN UYGULAMA ÖRNEKLERİ
+author: Fulya Aleyna Evergen
+student-number: 090200313
+---
+###  EVERLEDGER
+
+Everledger, küresel tedarik zincirlerinde şeffaflığı artırmak için teknolojik çözümler sunan dijital şeffaflık şirketidir. Oluşumun amacı, şeffaflığın stratejik bir zorunluluk olduğu pazarlarda daha fazla netlik ve güven sağlamaktır. En basit haliyle Everledger, bir varlığın kaynağına, özelliklerine, üretilme şekline ve buna benzer temel özelliklerine ilişkin güvenli ve kalıcı bir dijital kayıt oluşturmak için teknoloji geliştirmektedir. İşin dijital kayıt kısmında blockchain teknolojisi kullanılır. Yani platform her nesne için ayrıntıların ve işlemlerin kolayca işlenebildiği bir blok zinciri ağı (BTC) olarak çalışmaktadır. Ve bu sayede şeffaflık ve güven ortamı sağlanarak dolandırıcılıkların önüne geçilmektedir.
+
+![](https://www.luxurydaily.com/wp-content/uploads/2019/12/Everledger.png)
+
+###  MYSTERİUM NETWORK
+
+Mysterium Network, dileyen herkesin kendi bilgisayarına küçük bir uygulama indirmesiyle beraber bir VPN noktasına dönüşmesini sağlayarak erişimin engellenemediği ve dünyanın her yerinden, tüm içeriklere erişimin mümkün olduğu bir açık kaynaklı ağ yaratmayı amaçlamaktadır.  Dağıtık bir VPN uygulaması olarak kendisini tanımlayan bu platformda ağa bağlanarak bir erişim noktası haline gelen kişiler ile ağı kullanan kişilerin servis kayıtları bir Blockchain ağı üzerinde tutulmakta ve ağ içerisinde ticari işlemler, MYST adı verilen bir Token ile sağlanmaktadır.
+
+![](https://vpnpro.com/wp-content/uploads/Centralized-VPN-vs-Decentrelized-VPN-5.jpg)
+
+![](https://themerkle.com/wp-content/uploads-new/2017/05/monaco-logo-large-2.png)
+
+###  PROOFSTACK
+
+Proofstack; Android, iOS ve Web uygulamaları üzerinden, Yasal Yetkili Otoriteleri ve Blokzincir Protokollerini tek bir platform da toplayabilen, global ve yerel yasal deliller oluşturmanıza aracılık edebilen bir uygulamadır. Amacı, aynı anda farklı ülkelerin yasa ve mevzuatlarına uygun delillerin üretilebileceği, doğrulanabileceği ve yönetilebileceği, güvenli ve devamlı bir platform oluşturmaktır.
+
+Platformda her delillendirme yönteminde zaman damgalanan belge/veri farklıdır. Bu farka göre belirlenen delillendirme yöntemleri 3 tanedir.
+
+1. “File + Hash”
+
+2. “Zip + Hash”
+
+3. “Hash”
+
+3 yöntemde de temel olarak zaman damgalanmak istenen verinin hash değeri, tercih edilen blockchain protokolüne (BTC, LTC, ETH, EOS...) işlenir ve böylece seçilen veri artık bir delil haline gelmiş olur.
+
+![](https://proofstack.io/assets/img/comparison-1.png)
+
+![](https://cdn.webrazzi.com/uploads/2018/03/proofstack.jpg)
+
+---
