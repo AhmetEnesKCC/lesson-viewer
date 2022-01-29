@@ -1,17 +1,37 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Container from "./container";
 import styles from "../styles/layout.module.css";
 import { useSelector } from "react-redux";
+import { IoMdClose } from "react-icons/io";
 
 const Layout = ({ children }) => {
   const theme = useSelector((state) => state.theme);
   const notification = useSelector((state) => state.notification);
-
+  const [openSite, setOPenSite] = useState(false);
   return (
     <div className={`${styles.layout} layout`} data-theme={theme}>
+      <div
+        style={{ top: openSite ? "0" : "-100vh" }}
+        className="fixed w-screen h-screen  bg-black z-[9999] transition-all"
+      >
+        <IoMdClose
+          onClick={() => {
+            setOPenSite(false);
+          }}
+          className="text-white text-4xl mx-auto my-10 cursor-pointer hover:bg-slate-500 bg-opacity-30 rounded-full transition-all p-1"
+        />
+        <iframe className="w-full h-[80vh]" src="https://blockchaindemo.io/" />
+      </div>
+      <div></div>
+
       <Container className={styles.content}>
-        <Header />
+        <Header
+          onToggle={() => {
+            setOPenSite(!openSite);
+          }}
+        />
+
         {notification && (
           <div className="w-screen h-screen bg-black bg-opacity-80 fixed top-0 left-0 z-[999]">
             <div className="absolute top-1/2 left-1/2 px-[30px] py-[20px] bg-[black] border-2 border-orange-500 transfrom -translate-y-1/2 -translate-x-1/2 flex items-start justify-center flex-col">

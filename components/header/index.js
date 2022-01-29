@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux";
 import { hideNotification, setNotification } from "../../Redux";
 import { route } from "next/dist/server/router";
 
-const Header = () => {
+const Header = ({ onToggle }) => {
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -50,6 +50,14 @@ const Header = () => {
             </div>
           </Link>
         )}
+      </div>
+      <div
+        onClick={() => {
+          onToggle?.();
+        }}
+        className="bg-purple-400 p-2 text-black cursor-pointer"
+      >
+        demo
       </div>
       <div
         className="w-max space-x-6 flex justify-between items-center text-lg"
