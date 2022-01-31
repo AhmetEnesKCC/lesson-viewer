@@ -55,6 +55,9 @@ input[type="number"] {
   --span-bg: #fafafa;
   --text-color: #fafafa;
   --text-color-inverse: #212121;
+  strong {
+    @apply text-main-white;
+  }
 }
 
 .layout[data-theme="light"] {
@@ -62,4 +65,7 @@ input[type="number"] {
   --span-bg: #212121;
   --text-color: #212121;
   --text-color-inverse: #fafafa;
+  strong {
+    @apply text-main-black;
+  }
 }

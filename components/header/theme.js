@@ -29,7 +29,7 @@ const Theme = ({ className }) => {
         }`}
       >
         <BsSun
-          className="icon stroke-[2px] text-sm transition-all"
+          className=" icon stroke-[2px] text-sm transition-all w-2 h-2 duration-700"
           style={{ color: theme === "dark" ? "white" : "orange" }}
         />
       </div>

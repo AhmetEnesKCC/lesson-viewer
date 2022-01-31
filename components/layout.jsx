@@ -28,9 +28,15 @@ const Layout = ({ children }) => {
           onClick={() => {
             setOPenSite(false);
           }}
-          className="text-white text-4xl mx-auto my-10 cursor-pointer hover:bg-slate-500 bg-opacity-30 rounded-full transition-all p-1  "
+          className="text-white text-4xl mx-auto my-10 mb-4 cursor-pointer hover:bg-slate-500 bg-opacity-30 rounded-full transition-all p-1  "
         />
-        <iframe className="w-full h-[80vh]" src="https://blockchaindemo.io/" />
+        <div className="text-white mb-2 pl-2">
+          <a href="https://blockchaindemo.io/">
+            Kaynak:
+            <span className="text-purple-300"> https://blockchaindemo.io/</span>
+          </a>
+        </div>
+        <iframe className="w-full h-[80vh] " src="https://blockchaindemo.io/" />
       </div>
 
       <Container className={styles.content}>
