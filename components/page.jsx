@@ -36,6 +36,7 @@ const Page = ({ children, frontmatter }) => {
               <a
                 href={node.properties.href}
                 target="_blank"
+                rel="noreferrer"
                 className="cursor-pointer"
               >
                 {node.children[0].value}
