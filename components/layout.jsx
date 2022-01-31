@@ -2,13 +2,22 @@ import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Container from "./container";
 import styles from "../styles/layout.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { IoMdClose } from "react-icons/io";
+import { parseCookies, setCookie } from "nookies";
+import { setTheme } from "../Redux";
 
 const Layout = ({ children }) => {
   const theme = useSelector((state) => state.theme);
   const notification = useSelector((state) => state.notification);
   const [openSite, setOPenSite] = useState(false);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const { lw_site_theme } = parseCookies();
+    dispatch(setTheme(lw_site_theme === "true" ? "dark" : "light"));
+  }, []);
+
   return (
     <div className={`${styles.layout} layout`} data-theme={theme}>
       <div
@@ -23,7 +32,6 @@ const Layout = ({ children }) => {
         />
         <iframe className="w-full h-[80vh]" src="https://blockchaindemo.io/" />
       </div>
-      <div></div>
 
       <Container className={styles.content}>
         <Header

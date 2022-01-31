@@ -3,15 +3,17 @@ title: 1-8 ICO ve Uygulama Alanları
 author: Ahmet Enes Keçeci
 student-number: 090210321
 ---
+
 ## ICO Nedir ?
 
-ICO'nun açılımı: **initial coin offering** dir. Türkçe'ye çevirdiğimizde **anlık akçe teklifi** olarak karşımıza çıkıyor. Temel olarak yeni çıkıcak olan bir token için bitcoin veya etherium üzerinden verilecek tekliflerin değerlendirildiği açık arttırma veya teklif sistemi diyebiliriz. İlk ICO'nun 2014 yılında yapıldığı düşünülse de aslında bitcoinin çıkışı da ( 2009 ) da bir ICO idi.
+ICO'nun açılımı: **initial coin offering** dir. Türkçe'ye çevirdiğimizde **anlık akçe teklifi** olarak karşımıza çıkıyor. Temel olarak yeni çıkıcak olan bir token için bitcoin veya etherium üzerinden verilecek tekliflerin değerlendirildiği açık arttırma veya teklif sistemi diyebiliriz. İlk ICO'nun 2014 yılında yapıldığı düşünülse de aslında bitcoinin çıkışı ( 2009 ) da bir ICO idi.
 
 ![](https://static.doviz.com/article/ico-nedir-1577565814.jpg)
 
 ## Pazar Verileri
 
-ICO ile ilgili verileri yayımlayan coindesk sitesine göre 2014 ile 2018 yılları arasında yapılan ICO pazarı değeri 12.11 milyar dolar. Yıllara göre incelediğimizde; 
+ICO ile ilgili verileri yayımlayan [coindesk](https://www.coindesk.com/) sitesine göre 2014 ile 2018 yılları arasında yapılan ICO pazarı değeri 12.11 milyar dolar. Yıllara göre incelediğimizde;
+
 1. 2015 -> 10 **milyon** dolardan daha az
 2. 2016 -> 300 **milyon** dolar
 3. 2017 -> 5.4 **milyar** dolar
@@ -19,10 +21,9 @@ ICO ile ilgili verileri yayımlayan coindesk sitesine göre 2014 ile 2018 yılla
 
 olarak karşımıza çıkıyor.
 
-<br />
+---
 
-*NOT:** Veriler dolar üzerinden hesaplanmış olsa da yapılan işlemler popüler kripto paralarla sağlanıyor.
-
+**NOT:** Veriler dolar üzerinden hesaplanmış olsa da yapılan işlemler popüler kripto paralarla sağlanıyor.
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-LLQ7mMj0wA5YpmzMzcPEGs1N4OU3F82N4w&usqp=CAU)
 
@@ -32,15 +33,17 @@ Süreç genel olarak 2 aşamada gerçekleşiyor.
 
 ### 1-) Sabit Fiyat Belirlemek
 
-Fiyat belirleme aşamasını daha iyi anlatabilmek için şöyle bir senaryoyu ele alalım: mesela siz kendinize ait yeni bir token çıkartmak istiyorsunuz. Adı **X** token olsun. Tokenin fiyatını iki şekilde belirleyebiliyorsunuz: 
+Fiyat belirleme aşamasını daha iyi anlatabilmek için şöyle bir senaryoyu ele alalım: mesela siz kendinize ait yeni bir token çıkartmak istiyorsunuz. Adı **X** token olsun. Tokenin fiyatını iki şekilde belirleyebiliyorsunuz:
+
 1. Y adet **X token** Z tane ether ( kripto paralardan herhangi biri olabilir ) ediyor.
 2. En fazla teklifi verene **X** coini satıyorum. ( mezat )
 
-**Açık arttırma** usulünün ilk seçeneğe göre daha **az popüler** olduğunu da belirtelim. 
+**Açık arttırma** usulünün ilk seçeneğe göre daha **az popüler** olduğunu da belirtelim.
 
 ### 2-) Süreyi Kararlaştırmak
 
-Yine **X Token** üzerinden gidelim. Tokenin satışta kalacağı süreyi de iki şekilde belirleyebiliyorsunuz: 
+Yine **X Token** üzerinden gidelim. Tokenin satışta kalacağı süreyi de iki şekilde belirleyebiliyorsunuz:
+
 1. Sınırlı Token satışı: Token satışı için bir üst sınır belirlenir.
 2. Süreli Token satışı: Belirli bir süre içinde adet sınırı olmadan satış gerçekleştirilir.
 
@@ -56,19 +59,22 @@ ICO'lardaki satışları arttırmak ve müşterileri daha da etkilemek için bel
 
 ### Yapan Açısından
 
-- Hızla müşteri kazanmak - Reklam yapmak
+- Hızla müşteri kazanmak
+- Reklam yapmak
 - Bağımsız bir şekilde kaynak elde etmek
 
 ### Yatırımcı açısından
 
-- Yatırımın cazipliğinin artması ( ödül mekanizmaları ile kar etmek ) - Kanunlara takılmıyor
+- Yatırımın cazipliğinin artması ( ödül mekanizmaları ile kar etmek )
+- Kanunlara takılmıyor
 - Monopol ellere düşme riski yok
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh6MKqhHSZD1OZgQSNO3NmXDEO781OwLkBw&usqp=CAU)
 
 ## ICO'ların riskleri
 
-ICO'lar her ne kadar kulağa harikulade gibi gelse de bu birçok risk taşıdıkları gerçeğini gölgelememeli. Bazı riskleri: 
+ICO'lar her ne kadar kulağa harikulade gibi gelse de bu birçok risk taşıdıkları gerçeğini gölgelememeli. Bazı riskleri:
+
 - Dünyadaki birkaç yer hariç herhangi bir kanuna bağlı olmadıkları için korunmaları güç.
 - Yazılım kaynaklı oldukları için, dijital hatalarla karşılaşılabiliyor. Hatta 2016 yılında **The DNA** isminde bir ICO 70 milyon dolarını yazılımdaki açıktan kaynaklı gerçekleşen bir siber saldırı sonucu kaybetmişti. Etherium bu açığı kapatmak için 1 hata kadar çatallaşmak zorunda kalmıştı.
 - Token değerlemelerinin mantıksal bir temeli yok. Bir ürün ederinden fazla veya çok aza satılabiliyor.
@@ -77,7 +83,8 @@ ICO'lar her ne kadar kulağa harikulade gibi gelse de bu birçok risk taşıdık
 
 ## Ülkelerin ICO'ya bakışı
 
-ICO'lar genel olarak ( etik dışı ) bir özgürlüğe sahip olsa da ülkeden ülkeye değişen prosedürlerde işliyorlar.  
+ICO'lar genel olarak ( etik dışı ) bir özgürlüğe sahip olsa da ülkeden ülkeye değişen prosedürlerde işliyorlar.
+
 - Güney Kore ve Çin de yasak.
 - Amerika'da genel olarak serbest ama bazı kanuni temeller oturtulmaya çalışılıyor.
 - Avrupaya göre ICO'lar: riskli, yasaksız, KYC gibi kanunlara ve otoritelere uymalı.

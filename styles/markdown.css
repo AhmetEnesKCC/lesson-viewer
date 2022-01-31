@@ -13,8 +13,24 @@
   ol li {
     @apply my-2 ml-1;
     display: list-item;
+    color: var(--text-color);
     &::marker {
       content: counter(list-item) ". ";
+      @apply mr-2 text-purple-500 font-maven font-bold text-lg;
+    }
+  }
+
+  a {
+    @apply underline text-white;
+    text-decoration-color: rgb(168, 85, 247);
+  }
+
+  ul li {
+    @apply my-2 ml-2;
+    display: list-item;
+    color: var(--text-color);
+    &::marker {
+      content: "- ";
       @apply mr-2 text-purple-500 font-maven font-bold text-lg;
     }
   }
@@ -25,7 +41,7 @@
   h4,
   h5,
   h6 {
-    @apply mt-8 mb-8;
+    @apply mt-8 mb-8 !font-serif;
     color: var(--text-color);
   }
 
@@ -54,7 +70,8 @@
   }
 
   strong {
-    @apply font-bold bg-[#486AF2] px-1 rounded-lg text-[#fafafa];
+    @apply font-bold bg-[#486AF2] p-1 bg-opacity-50  text-sm;
+    color: var(--text-color);
   }
 
   .hr {

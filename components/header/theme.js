@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsSun } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { setTheme, toggleTheme } from "../../Redux";
+import { parseCookies, setCookie } from "nookies";
 
 const Theme = ({ className }) => {
   const [localTheme, setLocalTheme] = useState("dark");
@@ -10,6 +11,15 @@ const Theme = ({ className }) => {
 
   const handleClick = () => {
     dispatch(toggleTheme());
+    const cookies = parseCookies();
+    setCookie(
+      null,
+      "lw_site_theme",
+      cookies.lw_site_theme === "false" ? "true" : "false",
+      {
+        path: "/",
+      }
+    );
   };
   return (
     <div className={className} onClick={handleClick}>

@@ -32,7 +32,8 @@
   .text {
     @apply w-full flex flex-col items-center mb-10;
     textarea {
-      @apply overflow-hidden py-4 h-auto px-2 w-full border-gray-600 bg-transparent border-2  text-white  outline-none;
+      @apply overflow-hidden py-4 h-auto px-2 w-full border-gray-600 bg-transparent border-2    outline-none;
+      color: var(--text-color);
       &.yazi {
         @apply text-base;
       }

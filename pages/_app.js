@@ -1,6 +1,6 @@
-import { Provider, useSelector } from "react-redux";
+import { Provider, useDispatch, useSelector } from "react-redux";
 import Layout from "../components/layout";
-import { store } from "../Redux";
+import { setTheme, store } from "../Redux";
 import "../styles/globals.css";
 import "../styles/markdown.css";
 import "../styles/write.css";
