@@ -29,6 +29,10 @@ const Text = ({ ondelete, onSubmit, type, id, defaultValue }) => {
             : "Heading 3"
         }
         value={value}
+        onLoad={(e) => {
+          e.target.style.height = "auto";
+          e.target.style.height = e.target.scrollHeight.toString() + "px";
+        }}
         onChange={(e) => {
           e.target.style.height = "auto";
           e.target.style.height = e.target.scrollHeight.toString() + "px";

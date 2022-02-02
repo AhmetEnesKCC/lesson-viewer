@@ -83,7 +83,13 @@ const Write = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `---\ntitle: ${frontMatter.numara1}-${frontMatter.numara2} ${frontMatter.title}\nauthor: ${frontMatter.isim}\nstudent-number: ${frontMatter.ogrenci_numarasi}\n---`;
+    const text = `---\ntitle: ${
+      frontMatter.numara1 && frontMatter.numara2
+        ? frontMatter.numara1 + "-" + frontMatter.numara2
+        : ""
+    }  ${frontMatter.numara2} ${frontMatter.title}\nauthor: ${
+      frontMatter.isim
+    }\nstudent-number: ${frontMatter.ogrenci_numarasi}\n---`;
     const sources = [];
     writes.forEach((write) => {
       const element = document.getElementById(write.id);
