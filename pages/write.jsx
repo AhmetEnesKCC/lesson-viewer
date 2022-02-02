@@ -29,8 +29,11 @@ const Write = () => {
     );
 
     numbers = numbers[0].split("-");
-    frontMatterObject.numara1 = parseInt(numbers[0]);
-    frontMatterObject.numara2 = parseInt(numbers[1]);
+    if (numbers[0] && numbers[1]) {
+      frontMatterObject.numara1 = parseInt(numbers[0]);
+      frontMatterObject.numara2 = parseInt(numbers[1]);
+    }
+
     frontMatterObject.ogrenci_numarasi = frontMatter.data["student-number"];
     frontMatterObject.isim = frontMatter.data.author;
     setFrontMatter(frontMatterObject);
