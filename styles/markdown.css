@@ -87,6 +87,6 @@
   }
 
   .title {
-    @apply bg-[#486AF2] text-white w-max px-5 py-2  rounded-md sticky mb-10 top-20 md:top-14 z-20;
+    @apply bg-[#486AF2] text-white w-max max-w-full px-5 py-2  rounded-md sticky mb-10 top-20 md:top-14 z-20;
   }
 }

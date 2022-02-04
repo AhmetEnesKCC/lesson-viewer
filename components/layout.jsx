@@ -15,7 +15,12 @@ const Layout = ({ children }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     const { lw_site_theme } = parseCookies();
-    dispatch(setTheme(lw_site_theme === "true" ? "dark" : "light"));
+
+    if (lw_site_theme === "false") {
+      dispatch(setTheme("light"));
+    } else {
+      dispatch(setTheme("dark"));
+    }
   }, []);
 
   return (
@@ -30,8 +35,12 @@ const Layout = ({ children }) => {
           }}
           className="text-white text-4xl mx-auto my-10 mb-4 cursor-pointer hover:bg-slate-500 bg-opacity-30 rounded-full transition-all p-1  "
         />
-        <div className="text-white mb-2 pl-2">
-          <a href="https://blockchaindemo.io/">
+        <div className="text-white mb-2 pl-2  hover:underline">
+          <a
+            href="https://blockchaindemo.io/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Kaynak:
             <span className="text-purple-300"> https://blockchaindemo.io/</span>
           </a>
@@ -71,6 +80,18 @@ const Layout = ({ children }) => {
 
         {children}
       </Container>
+      <div
+        className="text-center my-10 text-3xl uppercase"
+        style={{ color: "var(--text-color)" }}
+      >
+        Mindmap
+      </div>
+      <img
+        id="mind-map"
+        className="w-full max-h-screen w-auto mx-auto"
+        src="/mind-map.png"
+        alt="mind-map"
+      />
     </div>
   );
 };

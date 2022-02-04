@@ -60,6 +60,15 @@ const Header = ({ onToggle }) => {
         Demo
       </div>
       <div
+        onClick={() => {
+          const element = document.querySelector("#mind-map");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}
+        className="bg-orange-600 text-white rounded-md shadow-orange-600  p-1 text-sm  cursor-pointer"
+      >
+        mindmap
+      </div>
+      <div
         className="w-max space-x-6 flex justify-between items-center text-lg"
         style={{ color: "#949494" }}
       >
