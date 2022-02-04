@@ -19,7 +19,7 @@ const Header = ({ onToggle }) => {
         <Lang className={styles.lang} />
         <Theme className={styles.theme} />
       </div>
-      <div>
+      {/* <div>
         {router.pathname !== "/write" ? (
           <Link href={"/write"}>
             <div className="bg-green-800 p-2 cursor-pointer">Yaziyorum</div>
@@ -50,7 +50,7 @@ const Header = ({ onToggle }) => {
             </div>
           </Link>
         )}
-      </div>
+      </div> */}
       <div
         onClick={() => {
           onToggle?.();
